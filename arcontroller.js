@@ -44,56 +44,19 @@ ready: function() {
 
         awe.projections.add({
           id: 'Account_Balance',
-          geometry: {
-                        shape:'text',
-                        text: 'Account Balance',
-                        parameters: {
-                                        size: 20,
-                                        height: 70,
-                                        curveSegments: 4,
-
-                                        font: "helvetiker",
-                                        weight: "normal",
-                                        style: "normal",
-
-                                        bevelThickness: 2,
-                                        bevelSize: 1.5,
-                                        bevelEnabled: true,
-
-                                        material: 0,
-                                        extrudeMaterial: 1
-                                    }
-                    },
+          geometry: {{shape: 'text', text: "Account Balance", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
           material: {
-                       type: 'phong',
+            type: 'phong', 
             color: 0xFF0000
           }
         }, {poi_id: 'marker'});
 
         awe.projections.add({
           id: 'Last_Transfer',
-          geometry: {
-                        shape:'text',
-                        text: 'Last Transfer',
-                        parameters: {
-                                        size: 20,
-                                        height: 70,
-                                        curveSegments: 4,
-
-                                        font: "helvetiker",
-                                        weight: "normal",
-                                        style: "normal",
-
-                                        bevelThickness: 2,
-                                        bevelSize: 1.5,
-                                        bevelEnabled: true,
-
-                                        material: 0,
-                                        extrudeMaterial: 1
-                                    }
-                    },
+          geometry: {{shape: 'text', text: "Last Transfer", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
+          rotation: {y: 45},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
           material: {
@@ -104,26 +67,7 @@ ready: function() {
 
         awe.projections.add({
           id: 'Last_Purchase',
-          geometry: {
-                        shape:'text',
-                        text: 'Last Purchase',
-                        parameters: {
-                                        size: 20,
-                                        height: 70,
-                                        curveSegments: 4,
-
-                                        font: "helvetiker",
-                                        weight: "normal",
-                                        style: "normal",
-
-                                        bevelThickness: 2,
-                                        bevelSize: 1.5,
-                                        bevelEnabled: true,
-
-                                        material: 0,
-                                        extrudeMaterial: 1
-                                    }
-                    },
+          geometry: {{shape: 'text', text: "Last Purchase", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
           material: {
