@@ -258,13 +258,13 @@ ready: function() {
               menu_open = !menu_open;
             break;
             case 'Account_Balance':
-              document.body.innerHTML = '<p> Your Account balance is 200 dollars</p>';
+              document.body.innerHTML = '<p>Your Account balance is 200 dollars</p>';
             break;
             case 'Last_Transfer':
-              document.body.innerHTML = '<p> Your last transfer was for 50 dollars</p>';
+              document.body.innerHTML = '<p>Your last transfer was for 50 dollars</p>';
             break;
             case 'Last_Purchase':
-              document.body.innerHTML = '<p> Your last purchase was for 80 dollars</p>';
+              document.body.innerHTML = '<p>Your last purchase was for 80 dollars</p>';
             break;
           }
         }, false);
