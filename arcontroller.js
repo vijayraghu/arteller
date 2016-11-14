@@ -45,7 +45,7 @@ ready: function() {
         awe.projections.add({
           id: 'Account_Balance',
           geometry: {
-                     shape:'text',
+                        shape:'text',
                         text: 'Account Balance',
                         parameters: {
                                         size: 20,
@@ -67,7 +67,7 @@ ready: function() {
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
           material: {
-            type: 'phong',
+                       type: 'phong',
             color: 0xFF0000
           }
         }, {poi_id: 'marker'});
@@ -254,6 +254,7 @@ ready: function() {
                   },
                   where: {id: 'Last_Purchase'}
                 });
+              }
 
               menu_open = !menu_open;
             break;
