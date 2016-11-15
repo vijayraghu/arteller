@@ -143,7 +143,7 @@ ready: function() {
                     animation: {
                       duration: 1
                     },
-                    position: {y: 35}
+                    position: {y: 175}
                   },
                   where: {id: 'Account_Balance'}
                 });
@@ -153,7 +153,7 @@ ready: function() {
                     animation: {
                       duration: 1
                     },
-                    position: {y: 70}
+                    position: {y: 210}
                   },
                   where: {id: 'Last_Transfer'}
                 });
@@ -163,7 +163,7 @@ ready: function() {
                     animation: {
                       duration: 1
                     },
-                    position: {y: 105}
+                    position: {y: 245}
                   },
                   where: {id: 'Last_Purchase'}
                 });
@@ -203,13 +203,9 @@ ready: function() {
               menu_open = !menu_open;
             break;
             case 'Account_Balance':
-              document.body.innerHTML = '<p>Your Account balance is 200 dollars</p>';
-            break;
             case 'Last_Transfer':
-              document.body.innerHTML = '<p>Your last transfer was for 50 dollars</p>';
-            break;
             case 'Last_Purchase':
-              document.body.innerHTML = '<p>Your last purchase was for 80 dollars</p>';
+              document.body.innerHTML = '<p>This is a test of ARTeller</p>';
             break;
           }
         }, false);
