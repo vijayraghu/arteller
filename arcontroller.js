@@ -42,38 +42,82 @@ window.addEventListener('load', function() {
               }
             }, {poi_id: 'marker'});
 
-        awe.projections.add({
-          id: 'account_balance',
-          geometry: {shape: 'text', text: "Account Balance", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
-          rotation: {x: 180, y: 0, z: 0},
-          position: {x: -5, y: -31, z: -5},
-          material: {
-            type: 'phong', 
-            color: 0xFF0000
-          }
-        }, {poi_id: 'marker'});
+            awe.projections.add({
+              id: 'ar_button_one',
+              geometry: {shape: 'cube', x: 60, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0xFF0000
+              }
+            }, {poi_id: 'marker'});
 
-        awe.projections.add({
-          id: 'last_transfer',
-          geometry: {shape: 'text', text: "Last Transfer", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
-          rotation: {x: 180, y: 0, z: 0},
-          position: {x: -5, y: -31, z: -5},
-          material: {
-              type: 'phong',
-            color: 0xFFFF00
-          }
-        }, {poi_id: 'marker'});
+            awe.projections.add({
+              id: 'ar_button_two',
+              geometry: {shape: 'cube', x: 60, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0xFF6600
+              }
+            }, {poi_id: 'marker'});
 
-        awe.projections.add({
-          id: 'last_purchase',
-          geometry: {shape: 'text', text: "Last Purchase", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
-          rotation: {x: 180, y: 0, z: 0},
-          position: {x: -5, y: -31, z: -5},
-          material: {
-            type: 'phong',
-            color: 0xFFFFFF
-          }
-        }, {poi_id: 'marker'});
+            awe.projections.add({
+              id: 'ar_button_three',
+              geometry: {shape: 'cube', x: 110, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0xFFFF00
+              }
+            }, {poi_id: 'marker'});
+
+            awe.projections.add({
+              id: 'ar_button_four',
+              geometry: {shape: 'cube', x: 150, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0xFFFFFF
+              }
+            }, {poi_id: 'marker'});
+
+            awe.projections.add({
+              id: 'ar_button_five',
+              geometry: {shape: 'cube', x: 180, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0x00FF00
+              }
+            }, {poi_id: 'marker'});
+
+            awe.projections.add({
+              id: 'ar_button_six',
+              geometry: {shape: 'cube', x: 150, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0x0080FF
+              }
+            }, {poi_id: 'marker'});
+
+            awe.projections.add({
+              id: 'ar_button_seven',
+              geometry: {shape: 'cube', x: 100, y: 30, z: 5},
+              rotation: {y: 45},
+              position: {x: -5, y: -31, z: -5},
+              material: {
+                type: 'phong',
+                color: 0x8000FF
+              }
+            }, {poi_id: 'marker'});
 
             awe.events.add([{
               id: 'ar_tracking_marker',
@@ -133,90 +177,174 @@ window.addEventListener('load', function() {
               }
             }]);
 
-        window.addEventListener('object_clicked', function(e) {
-          switch (e.detail.projection_id) {
-            case 'wormhole':
-              if (!menu_open) {
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: 175}
-                  },
-                  where: {id: 'account_balance'}
-                });
+            window.addEventListener('object_clicked', function(e) {
+              switch (e.detail.projection_id) {
+                case 'wormhole':
+                  if (!menu_open) {
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 35}
+                      },
+                      where: {id: 'ar_button_one'}
+                    });
 
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: 210}
-                  },
-                  where: {id: 'last_transfer'}
-                });
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 70}
+                      },
+                      where: {id: 'ar_button_two'}
+                    });
 
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: 245}
-                  },
-                  where: {id: 'last_purchase'}
-                });
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 105}
+                      },
+                      where: {id: 'ar_button_three'}
+                    });
 
-              } else {
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: -31}
-                  },
-                  where: {id: 'account_balance'}
-                });
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 140}
+                      },
+                      where: {id: 'ar_button_four'}
+                    });
 
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: -31}
-                  },
-                  where: {id: 'last_transfer'}
-                });
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 175}
+                      },
+                      where: {id: 'ar_button_five'}
+                    });
 
-                awe.projections.update({
-                  data: {
-                    animation: {
-                      duration: 1
-                    },
-                    position: {y: -31}
-                  },
-                  where: {id: 'last_purchase'}
-                });
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 210}
+                      },
+                      where: {id: 'ar_button_six'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: 245}
+                      },
+                      where: {id: 'ar_button_seven'}
+                    });
+                  } else {
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_one'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_two'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_three'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_four'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_five'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_six'}
+                    });
+
+                    awe.projections.update({
+                      data: {
+                        animation: {
+                          duration: 1
+                        },
+                        position: {y: -31}
+                      },
+                      where: {id: 'ar_button_seven'}
+                    });
+                  }
+
+                  menu_open = !menu_open;
+                break;
+                case 'ar_button_one':
+                case 'ar_button_two':
+                case 'ar_button_three':
+                case 'ar_button_four':
+                case 'ar_button_five':
+                case 'ar_button_six':
+                case 'ar_button_seven':
+                  document.body.innerHTML = '<p>Trial or AR for customer care</p>';
+
+                break;
               }
-
-              menu_open = !menu_open;
-            break;
-            case 'account_balance':
-            case 'last_transfer':
-            case 'last_purchase':
-              document.body.innerHTML = '<p>This is a test of ARTeller</p>';
-            break;
+            }, false);
+          } // success()
+        },
+        {
+          capabilities: [],
+          success: function() { 
+            document.body.innerHTML = '<p>Try this demo in the latest version of Chrome or Firefox on a PC or Android device</p>';
           }
-        }, false);
-      } // success()
-    },
-    {
-      capabilities: [],
-      success: function() { 
-        document.body.innerHTML = '<p>Try this demo in the latest version of Chrome or Firefox on a PC or Android device</p>';
-      }
-    }
-  ]); // awe.util.require()
-} // ready()
-}); // window.awe.init()
+        }
+      ]); // awe.util.require()
+    } // ready()
+  }); // window.awe.init()
 }); // load
