@@ -43,7 +43,7 @@ ready: function() {
         }, {poi_id: 'marker'});
 
         awe.projections.add({
-          id: 'Account_Balance',
+          id: 'account_balance',
           geometry: {shape: 'text', text: "Account Balance", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
@@ -54,19 +54,18 @@ ready: function() {
         }, {poi_id: 'marker'});
 
         awe.projections.add({
-          id: 'Last_Transfer',
+          id: 'last_transfer',
           geometry: {shape: 'text', text: "Last Transfer", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
-          rotation: {y: 45},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
           material: {
-            type: 'phong',
+              type: 'phong',
             color: 0xFFFF00
           }
         }, {poi_id: 'marker'});
 
         awe.projections.add({
-          id: 'Last_Purchase',
+          id: 'last_purchase',
           geometry: {shape: 'text', text: "Last Purchase", parameters: {size: 20, height: 8, curveSegments: 2, font: "helvetiker"}},
           rotation: {y: 45},
           position: {x: -5, y: -31, z: -5},
@@ -145,7 +144,7 @@ ready: function() {
                     },
                     position: {y: 175}
                   },
-                  where: {id: 'Account_Balance'}
+                  where: {id: 'account_balance'}
                 });
 
                 awe.projections.update({
@@ -155,7 +154,7 @@ ready: function() {
                     },
                     position: {y: 210}
                   },
-                  where: {id: 'Last_Transfer'}
+                  where: {id: 'last_transfer'}
                 });
 
                 awe.projections.update({
@@ -165,7 +164,7 @@ ready: function() {
                     },
                     position: {y: 245}
                   },
-                  where: {id: 'Last_Purchase'}
+                  where: {id: 'last_purchase'}
                 });
 
               } else {
@@ -176,7 +175,7 @@ ready: function() {
                     },
                     position: {y: -31}
                   },
-                  where: {id: 'Account_Balance'}
+                  where: {id: 'account_balance'}
                 });
 
                 awe.projections.update({
@@ -186,7 +185,7 @@ ready: function() {
                     },
                     position: {y: -31}
                   },
-                  where: {id: 'Last_Transfer'}
+                  where: {id: 'last_transfer'}
                 });
 
                 awe.projections.update({
@@ -196,15 +195,15 @@ ready: function() {
                     },
                     position: {y: -31}
                   },
-                  where: {id: 'Last_Purchase'}
+                  where: {id: 'last_purchase'}
                 });
               }
 
               menu_open = !menu_open;
             break;
-            case 'Account_Balance':
-            case 'Last_Transfer':
-            case 'Last_Purchase':
+            case 'account_balance':
+            case 'last_transfer':
+            case 'last_purchase':
               document.body.innerHTML = '<p>This is a test of ARTeller</p>';
             break;
           }
