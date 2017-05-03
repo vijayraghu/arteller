@@ -22,8 +22,7 @@ window.addEventListener('load', function() {
             'lib/awe-standard-window_resized.js',
             'lib/awe-standard-object_clicked.js',
             'lib/awe-jsartoolkit-dependencies.js',
-            'lib/awe.marker_ar.js',
-            'lib/helvetiker_regular.typeface.js'
+            'lib/awe.marker_ar.js'
           ],
           success: function() {
             window.awe.setup_scene();
