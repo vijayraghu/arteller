@@ -44,7 +44,7 @@ window.addEventListener('load', function() {
 
             awe.projections.add({
               id: 'ar_button_one',
-              geometry: {shape: 'cube', x: 100, y: 30, z: 5},
+              geometry: {shape: 'cube', x: 60, y: 30, z: 5},
               rotation: {y: 45},
               position: {x: -5, y: -31, z: -5},
               material: {
@@ -120,7 +120,7 @@ window.addEventListener('load', function() {
                         animation: {
                           duration: 1
                         },
-                        position: {y: 245}
+                        position: {y: 35}
                       },
                       where: {id: 'ar_button_one'}
                     });
