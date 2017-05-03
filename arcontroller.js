@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
                 curveSegments: 2,
                 font: "helvetiker"
               }},
-              rotation: {y: 45},
+              rotation: {x: 0, y: 45, z: 0},
               position: {x: -5, y: -31, z: -5},
               material: {
                 type: 'phong',
