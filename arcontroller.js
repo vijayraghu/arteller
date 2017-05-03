@@ -44,77 +44,6 @@ window.addEventListener('load', function() {
 
             awe.projections.add({
               id: 'ar_button_one',
-              geometry: {shape: 'text', text: "Account Balance", parameters: {
-                size: 20,
-                height: 8,
-                curveSegments: 2,
-                font_url: "helvetiker_regular.typeface.js"
-              }},
-              rotation: {x: 0, y: 45, z: 0},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0xFF0000
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_two',
-              geometry: {shape: 'cube', x: 60, y: 30, z: 5},
-              rotation: {y: 45},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0xFF6600
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_three',
-              geometry: {shape: 'cube', x: 110, y: 30, z: 5},
-              rotation: {y: 45},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0xFFFF00
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_four',
-              geometry: {shape: 'cube', x: 150, y: 30, z: 5},
-              rotation: {y: 45},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0xFFFFFF
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_five',
-              geometry: {shape: 'cube', x: 180, y: 30, z: 5},
-              rotation: {y: 45},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0x00FF00
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_six',
-              geometry: {shape: 'cube', x: 150, y: 30, z: 5},
-              rotation: {y: 45},
-              position: {x: -5, y: -31, z: -5},
-              material: {
-                type: 'phong',
-                color: 0x0080FF
-              }
-            }, {poi_id: 'marker'});
-
-            awe.projections.add({
-              id: 'ar_button_seven',
               geometry: {shape: 'cube', x: 100, y: 30, z: 5},
               rotation: {y: 45},
               position: {x: -5, y: -31, z: -5},
@@ -191,69 +120,9 @@ window.addEventListener('load', function() {
                         animation: {
                           duration: 1
                         },
-                        position: {y: 35}
-                      },
-                      where: {id: 'ar_button_one'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: 70}
-                      },
-                      where: {id: 'ar_button_two'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: 105}
-                      },
-                      where: {id: 'ar_button_three'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: 140}
-                      },
-                      where: {id: 'ar_button_four'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: 175}
-                      },
-                      where: {id: 'ar_button_five'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: 210}
-                      },
-                      where: {id: 'ar_button_six'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
                         position: {y: 245}
                       },
-                      where: {id: 'ar_button_seven'}
+                      where: {id: 'ar_button_one'}
                     });
                   } else {
                     awe.projections.update({
@@ -265,78 +134,12 @@ window.addEventListener('load', function() {
                       },
                       where: {id: 'ar_button_one'}
                     });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_two'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_three'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_four'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_five'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_six'}
-                    });
-
-                    awe.projections.update({
-                      data: {
-                        animation: {
-                          duration: 1
-                        },
-                        position: {y: -31}
-                      },
-                      where: {id: 'ar_button_seven'}
-                    });
                   }
 
                   menu_open = !menu_open;
                 break;
                 case 'ar_button_one':
-                case 'ar_button_two':
-                case 'ar_button_three':
-                case 'ar_button_four':
-                case 'ar_button_five':
-                case 'ar_button_six':
-                case 'ar_button_seven':
-                  // document.body.innerHTML = '<p>This is a trial for exploring possibility of AR in customer service</p>';
+				  // document.body.innerHTML = '<p>This is a trial for exploring possibility of AR in customer service</p>';
                   window.open("https://teller1bot.herokuapp.com/");
                 break;
               }
