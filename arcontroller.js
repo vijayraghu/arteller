@@ -22,7 +22,8 @@ window.addEventListener('load', function() {
             'lib/awe-standard-window_resized.js',
             'lib/awe-standard-object_clicked.js',
             'lib/awe-jsartoolkit-dependencies.js',
-            'lib/awe.marker_ar.js'
+            'lib/awe.marker_ar.js',
+            'lib/helvetiker_regular.typeface.js'
           ],
           success: function() {
             window.awe.setup_scene();
@@ -48,7 +49,7 @@ window.addEventListener('load', function() {
                 size: 20,
                 height: 8,
                 curveSegments: 2,
-                font: "helvetiker"
+                font_url: "helvetiker_regular.typeface.js"
               }},
               rotation: {x: 0, y: 45, z: 0},
               position: {x: -5, y: -31, z: -5},
