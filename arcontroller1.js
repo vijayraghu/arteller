@@ -44,7 +44,12 @@ window.addEventListener('load', function() {
 
             awe.projections.add({
               id: 'ar_button_one',
-              geometry: {shape: 'cube', x: 60, y: 30, z: 5},
+              geometry: {shape: 'text', text: "Account Balance", parameters: {
+                size: 20,
+                height: 8,
+                curveSegments: 2,
+                font: "helvetiker"
+              }},
               rotation: {y: 45},
               position: {x: -5, y: -31, z: -5},
               material: {
