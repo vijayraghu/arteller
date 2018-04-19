@@ -331,8 +331,8 @@ window.addEventListener('load', function() {
                 case 'ar_button_five':
                 case 'ar_button_six':
                 case 'ar_button_seven':
-                  // document.body.innerHTML = '<p>This is a trial for exploring possibility of AR in customer service</p>';
-                  window.open("https://teller1bot.herokuapp.com/");
+                  document.body.innerHTML = '<p>This is a trial for exploring possibility of AR in customer service</p>';
+                  //window.open("https://teller1bot.herokuapp.com/");
                 break;
               }
             }, false);
