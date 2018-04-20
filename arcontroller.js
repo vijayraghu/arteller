@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     device_type: awe.AUTO_DETECT_DEVICE_TYPE,
     settings: {
       container_id: 'container',
-      fps: 30,
+      fps: 15,
       default_camera_position: { x:0, y:0, z:0 },
       default_lights: [{
         id: 'point_light',
